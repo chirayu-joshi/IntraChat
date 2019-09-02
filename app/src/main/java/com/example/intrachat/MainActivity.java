@@ -1,11 +1,11 @@
 package com.example.intrachat;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.RelativeLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rellay1 = (RelativeLayout) findViewById(R.id.rellay1);
-        rellay2 = (RelativeLayout) findViewById(R.id.rellay2);
+        rellay1 = findViewById(R.id.rellay1);
+        rellay2 = findViewById(R.id.rellay2);
 
         handler.postDelayed(runnable, 2000);
     }

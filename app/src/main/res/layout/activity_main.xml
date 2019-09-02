@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:animateLayoutChanges="true"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     android:background="@drawable/grad_bg"
     tools:context=".MainActivity">
+
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -21,7 +21,8 @@
             android:layout_height="80dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"
+            tools:ignore="ContentDescription" />
 
         <RelativeLayout
             android:id="@+id/rellay1"
@@ -30,14 +31,13 @@
             android:visibility="gone"
             android:layout_marginTop="15dp">
 
-
             <TextView
                 android:id="@+id/tv_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="80dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Login"
+                android:text="@string/login"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
 
@@ -55,16 +55,14 @@
                     android:layout_marginTop="20dp"
                     android:orientation="vertical">
 
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="Username"
+                        android:text="@string/username"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
-
 
                     <EditText
                         android:layout_width="match_parent"
@@ -75,9 +73,9 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        tools:ignore="Autofill,LabelFor,TextFields" />
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -85,12 +83,11 @@
                     android:layout_marginTop="20dp"
                     android:orientation="vertical">
 
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="Password"
+                        android:text="@string/password"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
@@ -104,7 +101,9 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:inputType="textPassword"
+                        tools:ignore="Autofill,LabelFor" />
 
                 </LinearLayout>
 
@@ -120,13 +119,13 @@
                 android:fontFamily="sans-serif-medium"
                 android:paddingLeft="70dp"
                 android:paddingRight="70dp"
-                android:text="Login Now"
+                android:text="@string/login_now"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 
-
         </RelativeLayout>
+        
     </RelativeLayout>
 
 
@@ -139,26 +138,28 @@
         android:visibility="gone"
         android:layout_height="wrap_content" >
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/transparent"
-            android:text="Signup Now"
-            android:textAllCaps="true"
-            android:textColor="@color/white"
-            android:fontFamily="sans-serif" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="@string/signup_now"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:layout_alignParentStart="true" />
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/transparent"
-            android:fontFamily="sans-serif"
-            android:text="Forgot Password?"
-            android:textAllCaps="true"
-            android:textColor="@color/white" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fontFamily="sans-serif"
+                android:text="@string/forgot_password"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RelativeOverlap" />
 
     </RelativeLayout>
-
-
+    
 </RelativeLayout>
