@@ -28,7 +28,7 @@
             android:id="@+id/rellay1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
+
             android:layout_marginTop="15dp">
 
             <TextView
@@ -75,7 +75,22 @@
                         android:textColor="@color/white"
                         android:textSize="15sp"
                         tools:ignore="Autofill,LabelFor,TextFields" />
+
                 </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/displayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -110,6 +125,7 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/login_button"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_below="@+id/linlay1"
@@ -123,6 +139,37 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/or"
+                android:fontFamily="sans-serif-light"
+                android:layout_below="@id/login_button"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/or"
+                android:layout_centerHorizontal="true" >
+
+            </com.google.android.gms.common.SignInButton>
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_below="@id/or"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:visibility="gone" />
 
         </RelativeLayout>
         

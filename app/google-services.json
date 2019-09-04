@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "487003129774",
+    "firebase_url": "https://intrachat-10366.firebaseio.com",
+    "project_id": "intrachat-10366",
+    "storage_bucket": "intrachat-10366.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487003129774:android:846daee73244e8e6",
+        "android_client_info": {
+          "package_name": "com.example.intrachat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487003129774-2vrap9ejp1su31ps6ckv8un3l0vb7rce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.intrachat",
+            "certificate_hash": "6c0bcc50a2d4c3496d817bd0fd7644d26b3a368c"
+          }
+        },
+        {
+          "client_id": "487003129774-36569ehiilsil64jqo64fbkebit67i19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Z71g6XxGiu18vkATOruMpXPiyEKfg2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487003129774-tkh13vv359tlosqkce5sjo95c26sgrkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

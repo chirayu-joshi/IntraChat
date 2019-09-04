@@ -6,4 +6,8 @@
     <string name="login_now">Login Now</string>
     <string name="signup_now">Signup Now</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="client_id">1022814735998-ptv7okqdoefja3i66djrd782t09jn3id.apps.googleusercontent.com</string>
+    <string name="or">OR</string>
+    <string name="logout">Logout</string>
+    <string name="signed_out">Signed out</string>
 </resources>
